@@ -1,0 +1,15 @@
+CC=gcc
+CFLAGS=-lcurl -lhtmlstreamparser -lssl -lcrypto -lpthread -I.
+DEPS = crawler_head.h
+OBJ = main.o task_distribution.o crawler.o sample_process.o database_interface.o certificate.o basic_func.o 
+
+%.o: %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+CertCrawler: $(OBJ)
+	gcc -static-libgcc -Wl,-rpath=/home/cwru_pki/sample -o $@ $^ $(CFLAGS)
+
+.PHONY: clean
+
+clean:
+	rm -f *.o *~ core $(INCDIR)/*~ 
