@@ -1,8 +1,8 @@
 # X.509 Certificate Crawler
 
-This is an X.509 certificate crawler designed by C which as following advantage that other crawler may **NOT** have:
+This is an X.509 certificate crawler designed by C which as following advantage that other crawlers may **NOT** have:
 
-This crawler collects the **X.509 certificates**, but also can use to crawl anything with a little modification!
+This crawler collects the **X.509 certificates**, but also can be used to crawl anything with a little modification!
 
 This crawler can be run on **any linux-based** server.
 
