@@ -12,4 +12,4 @@ This crawler can be **locally compiled**, distributed using any method, and ran 
 
 This crawler keep the state of collection, can **recover crawling** right at where it stops, can even handle suddenly power-outage.
 
-TO BE CONTINUE!
+TO BE CONTINUED!
