@@ -9,6 +9,8 @@ You can find two Makefiles in this directory: `Makefile.local.example`, `Makefil
 
 The `Makefile.local.example` is placed for the local debugging and testing, and the `Makefile.planetlab.example` is for deploying to the remote environment. 
 
+You may also need the libcur and openssl: `apt-get install libcurl4-gnutls-dev`, `sudo apt-get install libssl-dev`
+
 ### Massively Deployment of Crawler
 **If you just use the crawler locally, please just jum to next paragraph.** 
 In my project, I deploy the crawler to the nodes of the distributed network Planetlab Node.

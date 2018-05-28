@@ -7,7 +7,7 @@ OBJ = main.o task_distribution.o crawler.o sample_process.o database_interface.o
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 CertCrawler: $(OBJ)
-	gcc -static-libgcc -Wl,-rpath=/home/cwru_pki/sample -o $@ $^ $(CFLAGS)
+	gcc -static-libgcc -Wl,-rpath=/usr/local/lib -o $@ $^ $(CFLAGS)
 
 .PHONY: clean
 
